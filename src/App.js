@@ -1,11 +1,14 @@
 import React from "react";
 import "./styles/index.css";
-import "./index";
+import { BsFillSuitHeartFill } from "react-icons/bs";
 
 function App() {
   return (
     <div>
-      <h1>VOTING APP!!!!!</h1>
+      <h1>
+        VOTING APP!!!!!
+        <BsFillSuitHeartFill />
+      </h1>
     </div>
   );
 }
