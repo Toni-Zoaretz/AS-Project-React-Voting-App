@@ -1,14 +1,10 @@
 import React from "react";
 import "./styles/index.css";
-import { BsFillSuitHeartFill } from "react-icons/bs";
-
+import LoginForm from "./components/LoginForm";
 function App() {
   return (
     <div>
-      <h1>
-        VOTING APP!!!!!
-        <BsFillSuitHeartFill />
-      </h1>
+      <LoginForm />
     </div>
   );
 }
