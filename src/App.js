@@ -1,10 +1,12 @@
 import React from "react";
 import "./styles/index.css";
-import LoginForm from "./components/LoginForm";
+import Login from "./pages/Login";
+import Voting from "./pages/Voting";
 function App() {
   return (
     <div>
-      <LoginForm />
+      <Login />
+      <Voting />
     </div>
   );
 }

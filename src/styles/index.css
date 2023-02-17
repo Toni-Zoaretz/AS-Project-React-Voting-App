@@ -7,16 +7,17 @@
   font-family: "Roboto", sans-serif;
 }
 
-.form-wrapper {
+.wrapper {
   background-color: #f2f2f2;
   height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid black;
 }
 
-form {
+.box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,6 +27,7 @@ form {
   border-radius: 15px;
   width: 20%;
   height: 70%;
+  min-width: 340px;
   border: 1px solid white;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -69,4 +71,63 @@ h2 {
 
 .btn:hover {
   background-position: right center;
+}
+
+/* -------------------------card----------------------- */
+.voting-page {
+  /* //height media qurei */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+
+.card-contanier {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 2rem; */
+  /* padding-top: 10rem; */
+  background-color: white;
+  border-radius: 15px;
+  width: 18%;
+  height: 450px;
+  border: 1px solid white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  /* border: 1px solid #333; */
+  min-width: 340px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+  text-align: center;
+  padding-top: 2rem;
+}
+.container h3 {
+  padding-top: 1rem;
+}
+.container h5 {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
 }
