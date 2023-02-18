@@ -1,7 +1,12 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-function Admin() {
-  return <div>{/* <Navbar /> */}</div>;
+import Table from "../components/Table";
+function Admin(route, setRoute) {
+  return (
+    <div>
+      <Table route={route} setRoute={setRoute} />
+    </div>
+  );
 }
 
 export default Admin;

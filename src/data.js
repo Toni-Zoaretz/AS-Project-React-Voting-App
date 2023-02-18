@@ -2,14 +2,14 @@ export const users = [
   {
     id: "7hZ2Q8cE7V",
     name: "Tomas Smith",
-    password: "9YSLDWL",
+    password: "1",
     type: "user",
     email: "tomas19@aol.com",
   },
   {
     id: "8dN4Q2eB2W",
     name: "John Doe",
-    password: "7GTHPPL",
+    password: "2",
     type: "user",
     email: "johndoe@gmail.com",
   },
