@@ -1,6 +1,5 @@
 import { users } from "../data";
 
-// VALIDATE PASSWORD - FIND USER AND THEN VALIDATE IF PW IS CORRECT (CASE SENSITIVE)
 export const loginValidation = (user) => {
   return users.find((usersList) => {
     return (
@@ -9,6 +8,3 @@ export const loginValidation = (user) => {
     );
   });
 };
-
-///name
-// export const getUser = () =>

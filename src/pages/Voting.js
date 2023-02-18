@@ -8,7 +8,6 @@ import img3 from "../assets/3.png";
 function Voting(props) {
   return (
     <section className="voting-page">
-      {/* <Navbar route={props.route} setRoute={props.setRoute} /> */}
       <div className="card-contanier">
         <Card img={img1} name={"Name Name1"} totalVote={15} />
         <Card img={img2} name={"Name Name2"} totalVote={10} />

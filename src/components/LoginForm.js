@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { users } from "../data";
 import { loginValidation } from "../utils/dataEXtracrt";
 
-// { loginEmail, loginPassword }
 function LoginForm({ setRoute, setCurrentUser }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -19,22 +18,14 @@ function LoginForm({ setRoute, setCurrentUser }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // if (email === password) console.log("hell44o");
     const user = { loginEmail: email, loginPassword: password };
     const userSecssesLogin = loginValidation(user);
-    // console.log(isUserExist);
     if (userSecssesLogin) {
       setCurrentUser(userSecssesLogin);
       setRoute(1);
-
-      // VALIDATE IF NOT EMPTY && EMAIL IS EMAIL
     } else {
       setError(true);
     }
-
-    // FIND USER IN DATA BY EMAIL
-    // IF USER IS IN DATA CHAECK IF PASSWOED IS CORREC & GET THE TYPE OF THE USER
-    // IF PW IS CORRECT MOVE THE USER TO NEXT PAGE ACCORDIND TO USER'S TYPE (U SHOULD DO IT WITH STATE FROM APP [THAT DECIDE WITCH PAGE SHOULD BE RENDERED] AND WITH USEEFECT HOOK LIKE IN ORI CODE)
   };
 
   return (
@@ -58,7 +49,6 @@ function LoginForm({ setRoute, setCurrentUser }) {
         <button className="btn" type="submit">
           Login
         </button>
-
         {error ? (
           <span className="show">You Enterd Wrong Email/password!</span>
         ) : null}
