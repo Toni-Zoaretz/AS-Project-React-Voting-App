@@ -17,7 +17,7 @@
   /* border: 1px solid black; */
 }
 
-.box {
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,6 +71,11 @@ h2 {
 
 .btn:hover {
   background-position: right center;
+}
+
+.show {
+  color: #333;
+  font-weight: 500;
 }
 
 /* -------------------------voting-page----------------------- */
@@ -135,6 +140,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  background-color: #f2f2f2;
 }
 
 .navbar span {
@@ -144,4 +150,18 @@ img {
 
 .navbar .btn-logout {
   padding: 10px 50px;
+}
+/* -----------------btn done & change----------------- */
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.btn-done {
+  padding: 10px 30px;
+}
+
+.btn-change {
+  padding: 10px 20px;
 }

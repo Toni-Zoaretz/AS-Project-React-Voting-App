@@ -1,7 +1,6 @@
 import React from "react";
 function Card({ img, name, totalVote }) {
   return (
-    // <div className="wrapper">
     <div className="card">
       <img src={img} />
       <div className="container">
@@ -12,7 +11,6 @@ function Card({ img, name, totalVote }) {
         <button className="btn">VOTE</button>
       </div>
     </div>
-    // {/* </div> */}
   );
 }
 

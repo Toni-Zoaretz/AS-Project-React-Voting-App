@@ -1,10 +1,12 @@
 import React from "react";
 
-function Navbar() {
+function Navbar({ setRoute, currentUserName }) {
   return (
     <div className="navbar">
-      <span>Hi User</span>
-      <button className="btn btn-logout">Logout</button>
+      <span>Hi {currentUserName}</span>
+      <button className="btn btn-logout" onClick={() => setRoute(0)}>
+        Logout
+      </button>
     </div>
   );
 }

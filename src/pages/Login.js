@@ -1,10 +1,10 @@
 import React from "react";
 import LoginForm from "../components/LoginForm";
 
-function Login() {
+function Login({ setRoute, setCurrentUser }) {
   return (
     <div>
-      <LoginForm />
+      <LoginForm setRoute={setRoute} setCurrentUser={setCurrentUser} />
     </div>
   );
 }
