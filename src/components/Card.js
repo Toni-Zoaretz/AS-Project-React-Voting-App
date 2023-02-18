@@ -12,6 +12,8 @@ function Card({
   votingC,
   voteBtn,
   setVoteBtn,
+  didVote,
+  updateDidVote,
 }) {
   const [btns, setButns] = useState(false); //DONE CHANGE BTN
   // const [voteBtn, setVoteBtn] = useState(true); //VOTE BTN
@@ -27,6 +29,7 @@ function Card({
     }
     setButns(true);
     setVoteBtn(false);
+
     // setOptionVotin(e.target.id);
     // voteMessage(false);
   };
@@ -39,7 +42,7 @@ function Card({
         <h5>{totalVote}</h5>
       </div>
       <div>
-        {voteBtn ? (
+        {voteBtn && !didVote ? (
           <button
             className="btn"
             id={name}
@@ -64,6 +67,7 @@ function Card({
             setVoteBtn={setVoteBtn}
             onClick={voteBtn}
             voteBtn={true}
+            updateDidVote={updateDidVote}
           />
         ) : null}
         {voteMessage ? <span>"thank you</span> : ""}

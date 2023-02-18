@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "../components/Navbar";
 import Table from "../components/Table";
-function Admin(route, setRoute) {
+function Admin({ didVote }) {
+  console.log(didVote);
   return (
     <div>
-      <Table route={route} setRoute={setRoute} />
+      <Table didVote={didVote} />
     </div>
   );
 }

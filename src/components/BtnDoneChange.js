@@ -13,6 +13,7 @@ function BtnDoneChange({
   votingB,
   votingC,
   setVoteMessage,
+  updateDidVote,
 }) {
   const handleChangeClick = (e) => {
     if (e.target.id === "Cats") {
@@ -30,6 +31,7 @@ function BtnDoneChange({
     setButns(false);
     setVoteBtn(false);
     setVoteMessage(true);
+    updateDidVote();
   };
 
   return (

@@ -5,7 +5,16 @@ import img1 from "../assets/1.jpg";
 import img2 from "../assets/2.png";
 import img3 from "../assets/3.png";
 
-function Voting({ setA, votingA, setB, votingB, setC, votingC }) {
+function Voting({
+  setA,
+  votingA,
+  setB,
+  votingB,
+  setC,
+  votingC,
+  didVote,
+  updateDidVote,
+}) {
   const [voteBtn, setVoteBtn] = useState(true); //VOTE BTN
   return (
     <section className="voting-page">
@@ -18,6 +27,8 @@ function Voting({ setA, votingA, setB, votingB, setC, votingC }) {
           totalVote={votingA}
           voteBtn={voteBtn}
           setVoteBtn={setVoteBtn}
+          didVote={didVote}
+          updateDidVote={updateDidVote}
         />
         <Card
           img={img2}
@@ -27,6 +38,8 @@ function Voting({ setA, votingA, setB, votingB, setC, votingC }) {
           totalVote={votingB}
           voteBtn={voteBtn}
           setVoteBtn={setVoteBtn}
+          didVote={didVote}
+          updateDidVote={updateDidVote}
         />
         <Card
           img={img3}
@@ -36,6 +49,8 @@ function Voting({ setA, votingA, setB, votingB, setC, votingC }) {
           totalVote={votingC}
           voteBtn={voteBtn}
           setVoteBtn={setVoteBtn}
+          didVote={didVote}
+          updateDidVote={updateDidVote}
         />
       </div>
     </section>
