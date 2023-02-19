@@ -17,6 +17,7 @@ function Table({ didVote }) {
           </thead>
           <tbody>
             {users.map((user) => (
+              /* CR - u must give a key prop to the element */
               <tr>
                 <td>{user.name}</td>
                 <td>{user.email}</td>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// CR - an unused import - delete it
 import Navbar from "../components/Navbar";
 import Card from "../components/Card";
 import img1 from "../assets/1.jpg";
@@ -18,7 +19,9 @@ function Voting({
   const [voteBtn, setVoteBtn] = useState(true); //VOTE BTN
   return (
     <section className="voting-page">
+      {/* CR - another typo - should be 'container' */}
       <div className="card-contanier">
+        {/* CR - u should have created an array and map over it */}
         <Card
           img={img1}
           name={"Cats"}
