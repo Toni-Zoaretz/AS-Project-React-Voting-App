@@ -9,7 +9,7 @@ import "./styles/index.css";
 
 function App() {
   const [route, setRoute] = useState(0);
-  // CR - u shold initialize didVote like this:
+  // CR - u should initialize didVote like this:
   /*
     {
       id: '',

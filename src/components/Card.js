@@ -39,6 +39,7 @@ function Card({
 
   return (
     <div className="card">
+      {/* CR - add alt */}
       <img src={img} />
       <div className="container">
         <h3>{name}</h3>
