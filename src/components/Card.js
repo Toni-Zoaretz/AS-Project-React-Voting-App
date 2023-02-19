@@ -14,13 +14,16 @@ function Card({
   setVoteBtn,
   didVote,
   updateDidVote,
-}) {
+}) {  
+  // CR - bad naming - should be 'showBtns'
   const [btns, setButns] = useState(false); //DONE CHANGE BTN
   // const [voteBtn, setVoteBtn] = useState(true); //VOTE BTN
+  // CR - bad naming - should be 'showMessage'
   const [voteMessage, setVoteMessage] = useState(false);
 
   const clickVotingHandler = (e) => {
     if (e.target.id === "Cats") {
+      // CR - updating a computed value should be done - setA(prevVotingA => prevVotingA + 1);
       setA(votingA + 1);
     } else if (e.target.id === "Hedgehogs") {
       setB(votingB + 1);

@@ -15,6 +15,8 @@ function BtnDoneChange({
   setVoteMessage,
   updateDidVote,
 }) {
+  // CR - duplicate code - u should have used the 'handleChangeClick' method from the parent
+  // CR - wrong naming - if it's attached to an onClick so u should call it clickHandler
   const handleChangeClick = (e) => {
     if (e.target.id === "Cats") {
       setA(votingA - 1);
