@@ -9,9 +9,9 @@ https://react-voting-application.netlify.app/
 
 ### Screenshots
 
-![Alt text](/src/assets/%E2%80%8F%E2%80%8FhomeSH.PNG.PNG)
+![Alt text](/src/assets/%E2%80%8F%E2%80%8FhomeSH.PNG)
 
-![plot](/src/assets/%E2%80%8F%E2%80%8FvotingSH.PNG.PNG)
+![plot](/src/assets/%E2%80%8F%E2%80%8FvotingSH.PNG)
 
 ### Deployment
 
