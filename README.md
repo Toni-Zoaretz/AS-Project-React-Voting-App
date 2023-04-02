@@ -1,6 +1,6 @@
 # ✋ React Voting App
 
-I was given a task @AppleSeeds Bootcamp to make a React App with two type of users - admin and regular user.<br> in the app all users can vote for one of the Animal and the admin users can view statistics in chart.<br>
+I was given a task @AppleSeeds Bootcamp to make a React Voting App with two type of users - admin and regular user.<br> in the app all users can vote for one of the Animal and the admin users can view statistics in chart.<br>
 I implement the project using `HTML`,`CSS`,`JavaScript`,`React`
 
 ### Project link:
