@@ -35,7 +35,7 @@ function LoginForm({ setRoute, setCurrentUser }) {
     <div className="wrapper">
       <form onSubmit={handleSubmit} className="form">
         {/* CR - notice that u have a lot of typos!!! install extension 'Code Spell Checker by Street Side Software' */}
-        <h2>WELLCOME</h2>
+        <h2>WELCOME</h2>
         {/* CR - u should have made a component for all of the inputs */}
         <input
           type="email"
